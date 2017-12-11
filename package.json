@@ -1,0 +1,23 @@
+{
+  "name": "account-service",
+  "version": "1.0.0",
+  "description": "Account Service",
+  "main": "index.js",
+  "repository": "git@github.com:TrackLines/account-service.git",
+  "author": "keloran@tracklin.es",
+  "license": "MIT",
+  "keywords": [
+    "RESTful",
+    "API"
+  ],
+  "bugs": {
+    "url": "https://github.com/tracklines/account-service/issues"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.5"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "mongoose": "^4.13.6"
+  }
+}
