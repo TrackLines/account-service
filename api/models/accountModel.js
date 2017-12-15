@@ -1,12 +1,18 @@
 'use strict'
 
-let mongoose = require('mongoose');
-let Schema = mongoose.Schema;
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
-let AccountSchema = new Schema({
-    name: {
+const AccountSchema = new Schema({
+    authId: {
         type: String,
-        required: 'Enter Name'
+        required: 'Auth0 AccountId'
+    },
+    apiKey: {
+        type: String
+    },
+    dashboardKey: {
+        type: String
     },
     Created_date: {
         type: Date,

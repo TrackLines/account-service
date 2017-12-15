@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function(app) {
-    let account = require('../controllers/accountController');
+    const account = require('../controllers/accountController');
 
     app.route('/account')
         .get(account.list_all_accounts)

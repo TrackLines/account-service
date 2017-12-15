@@ -1,15 +1,15 @@
-let express = require('express');
-let mongoose = require('mongoose');
-let bodyParser = require('body-parser');
+const express = require('express');
+const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
 
-let Account = require('./api/models/accountModel');
-let routes = require('./api/routes/accountRoutes');
+const Account = require('./api/models/accountModel');
+const routes = require('./api/routes/accountRoutes');
 
-let port = process.env.PORT || 3000;
-let app = express();
+const port = process.env.PORT || 3000;
+const app = express();
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://mongo/Account', {
+mongoose.connect(process.env.MONGO_PATH, {
     useMongoClient: true
 });
 
